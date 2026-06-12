@@ -3,6 +3,7 @@ import authRoutes from './routes/auth.route';
 
 const app: express.Application = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 
 app.use('/api/auth', authRoutes);

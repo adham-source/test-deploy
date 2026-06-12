@@ -7,6 +7,7 @@ class AuthController {
             const user = await userService.register(req.body);
             res.status(201).json(user);
         } catch (err) {
+            console.error(err);
             res.status(400).json({ error: 'Registration failed' });
         }
     }
