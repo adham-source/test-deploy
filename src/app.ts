@@ -1,10 +1,14 @@
-import express from 'express';
+import express, {Request, Response} from 'express';
+import authRoutes from './routes/auth.route';
 
 const app: express.Application = express();
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
+
+app.use('/api/auth', authRoutes);
+
+app.get('/', (req:Request, res: Response) => {
+  res.json({ message: 'Welcome to the API' });
 });
 
 ;

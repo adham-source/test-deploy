@@ -11,11 +11,13 @@
     "build": "tsc"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongoose": "^9.7.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^25.9.3",
+    "dotenv": "^17.4.2",
     "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
